@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        JPHACKS 2022 ::
+        umahara555
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="この記事は、琉大 Advent Calendar 2022 18日目の記事になります。
+JPHACKS 2022 に参加した話です。
+参加のキッカケ # 今回自分も含めて4人のチームで参加しました。メンバーの3人とは以前から輪読会を行なっていて、チーム開発に関する本や開発手法に関する本を読んでいました。その勉強の実践編というのと、学生生活の思い出作りを兼ねて参加してみようということになりました。
+Hacking Sprint (予選) # 過去の失敗からまず、MVP（Minimum Viable Product）を作り、Pitch Day でちゃんと動作するデモを見せられるようにする、というのを目指しました。過去にハッカソンに参加した際に、最初から大きなもの（プロダクトの完成形）を作ろうとしてしまい、プロダクトの基本機能すら一通り動作するところまで作りきれず、ちゃんとデモを行うことが出来ませんでした。こういった過去の失敗を今回も繰り返さないように注意して進めていきました。
+開発期間は一週間でした。ただ、私たちのチームは各自1日2,3時間程しか作業時間が確保出来ないことがわかっていました。そこで、なるべく効率よく開発を進めるために、GitHubの機能をフルに活用する事にしました。Projectのボード機能やGitHub ActionによるCI/CD、IssueテンプレートやPRテンプレートなどなどを整備し、スムーズに開発を行えるように努めました。
+Pitch Day での発表時間は1チーム90秒でした。90秒という時間でプロダクトについて最大限伝える必要があります。そこで私たちのチームは、デモに加えて、過去に参加したenPiTで学んだエレベータピッチを使って発表を行いました。最初の30秒までで挨拶とエレベーターピッチを行い、残りの60秒でデモを行いました。
+その結果、各ブロック毎のオーディエンス賞である、 Best Hacking Sprint Award を頂きました。また、GitHubの機能を最大件活用した開発を行ったことが評価され、Best Team Collaboration Award 賞を受賞する事も出来ました。
+Award Day (本選) # なんと、Finalist に選ばれ、Award Day (本選)に進出する事になりました。
+&amp;hellip;
+すみません、Pitch Day 後から Award Day までの事については、後日追記します。多分
+東京の感想 # 電車便利だなと。普段自分で車を運転しての移動なので、乗ってるだけで目的地近くまで移動出来るのがめっちゃ楽でした。その電車に乗る際にはGoogleマップに頼りまくりました。目的地を設定することで今居る場所から最寄りの乗るべき駅とホーム、電車から降りる駅まで全て教えてくれて、これが無かったら迷子になってたと思います。また、ちゃんと正しい切符を買うのに疲れそうだったので、全てSUICA使って乗りました。
+最後に # ハッカソンやチーム開発に一度は参加してみると普段では得られないような学びが得られるので、機会があれば是非参加してみてください。"
+/>
+<meta
+  name="keywords"
+  content=""
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://umahara555.github.io/posts/jphacks-2022/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="https://umahara555.github.io/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://umahara555.github.io/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="https://umahara555.github.io/img/favicon.png" />
+
+
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JPHACKS 2022"/>
+<meta name="twitter:description" content="この記事は、琉大 Advent Calendar 2022 18日目の記事になります。
+JPHACKS 2022 に参加した話です。
+参加のキッカケ # 今回自分も含めて4人のチームで参加しました。メンバーの3人とは以前から輪読会を行なっていて、チーム開発に関する本や開発手法に関する本を読んでいました。その勉強の実践編というのと、学生生活の思い出作りを兼ねて参加してみようということになりました。
+Hacking Sprint (予選) # 過去の失敗からまず、MVP（Minimum Viable Product）を作り、Pitch Day でちゃんと動作するデモを見せられるようにする、というのを目指しました。過去にハッカソンに参加した際に、最初から大きなもの（プロダクトの完成形）を作ろうとしてしまい、プロダクトの基本機能すら一通り動作するところまで作りきれず、ちゃんとデモを行うことが出来ませんでした。こういった過去の失敗を今回も繰り返さないように注意して進めていきました。
+開発期間は一週間でした。ただ、私たちのチームは各自1日2,3時間程しか作業時間が確保出来ないことがわかっていました。そこで、なるべく効率よく開発を進めるために、GitHubの機能をフルに活用する事にしました。Projectのボード機能やGitHub ActionによるCI/CD、IssueテンプレートやPRテンプレートなどなどを整備し、スムーズに開発を行えるように努めました。
+Pitch Day での発表時間は1チーム90秒でした。90秒という時間でプロダクトについて最大限伝える必要があります。そこで私たちのチームは、デモに加えて、過去に参加したenPiTで学んだエレベータピッチを使って発表を行いました。最初の30秒までで挨拶とエレベーターピッチを行い、残りの60秒でデモを行いました。
+その結果、各ブロック毎のオーディエンス賞である、 Best Hacking Sprint Award を頂きました。また、GitHubの機能を最大件活用した開発を行ったことが評価され、Best Team Collaboration Award 賞を受賞する事も出来ました。
+Award Day (本選) # なんと、Finalist に選ばれ、Award Day (本選)に進出する事になりました。
+&hellip;
+すみません、Pitch Day 後から Award Day までの事については、後日追記します。多分
+東京の感想 # 電車便利だなと。普段自分で車を運転しての移動なので、乗ってるだけで目的地近くまで移動出来るのがめっちゃ楽でした。その電車に乗る際にはGoogleマップに頼りまくりました。目的地を設定することで今居る場所から最寄りの乗るべき駅とホーム、電車から降りる駅まで全て教えてくれて、これが無かったら迷子になってたと思います。また、ちゃんと正しい切符を買うのに疲れそうだったので、全てSUICA使って乗りました。
+最後に # ハッカソンやチーム開発に一度は参加してみると普段では得られないような学びが得られるので、機会があれば是非参加してみてください。"/>
+
+
+
+<meta property="og:title" content="JPHACKS 2022" />
+<meta property="og:description" content="この記事は、琉大 Advent Calendar 2022 18日目の記事になります。
+JPHACKS 2022 に参加した話です。
+参加のキッカケ # 今回自分も含めて4人のチームで参加しました。メンバーの3人とは以前から輪読会を行なっていて、チーム開発に関する本や開発手法に関する本を読んでいました。その勉強の実践編というのと、学生生活の思い出作りを兼ねて参加してみようということになりました。
+Hacking Sprint (予選) # 過去の失敗からまず、MVP（Minimum Viable Product）を作り、Pitch Day でちゃんと動作するデモを見せられるようにする、というのを目指しました。過去にハッカソンに参加した際に、最初から大きなもの（プロダクトの完成形）を作ろうとしてしまい、プロダクトの基本機能すら一通り動作するところまで作りきれず、ちゃんとデモを行うことが出来ませんでした。こういった過去の失敗を今回も繰り返さないように注意して進めていきました。
+開発期間は一週間でした。ただ、私たちのチームは各自1日2,3時間程しか作業時間が確保出来ないことがわかっていました。そこで、なるべく効率よく開発を進めるために、GitHubの機能をフルに活用する事にしました。Projectのボード機能やGitHub ActionによるCI/CD、IssueテンプレートやPRテンプレートなどなどを整備し、スムーズに開発を行えるように努めました。
+Pitch Day での発表時間は1チーム90秒でした。90秒という時間でプロダクトについて最大限伝える必要があります。そこで私たちのチームは、デモに加えて、過去に参加したenPiTで学んだエレベータピッチを使って発表を行いました。最初の30秒までで挨拶とエレベーターピッチを行い、残りの60秒でデモを行いました。
+その結果、各ブロック毎のオーディエンス賞である、 Best Hacking Sprint Award を頂きました。また、GitHubの機能を最大件活用した開発を行ったことが評価され、Best Team Collaboration Award 賞を受賞する事も出来ました。
+Award Day (本選) # なんと、Finalist に選ばれ、Award Day (本選)に進出する事になりました。
+&hellip;
+すみません、Pitch Day 後から Award Day までの事については、後日追記します。多分
+東京の感想 # 電車便利だなと。普段自分で車を運転しての移動なので、乗ってるだけで目的地近くまで移動出来るのがめっちゃ楽でした。その電車に乗る際にはGoogleマップに頼りまくりました。目的地を設定することで今居る場所から最寄りの乗るべき駅とホーム、電車から降りる駅まで全て教えてくれて、これが無かったら迷子になってたと思います。また、ちゃんと正しい切符を買うのに疲れそうだったので、全てSUICA使って乗りました。
+最後に # ハッカソンやチーム開発に一度は参加してみると普段では得られないような学びが得られるので、機会があれば是非参加してみてください。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://umahara555.github.io/posts/jphacks-2022/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-18T01:15:38+09:00" />
+<meta property="article:modified_time" content="2022-12-18T01:15:38+09:00" />
+
+
+
+
+
+
+
+  </head>
+  <body >
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="https://umahara555.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >hello friend</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">JPHACKS 2022</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          2022-12-18
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>この記事は、<a href="https://adventar.org/calendars/7496">琉大 Advent Calendar 2022</a> 18日目の記事になります。</p>
+<p><a href="https://jphacks.com/">JPHACKS 2022</a> に参加した話です。</p>
+<h2 id="参加のキッカケ">
+  参加のキッカケ
+  <a href="#%e5%8f%82%e5%8a%a0%e3%81%ae%e3%82%ad%e3%83%83%e3%82%ab%e3%82%b1" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>今回自分も含めて4人のチームで参加しました。メンバーの3人とは以前から輪読会を行なっていて、チーム開発に関する本や開発手法に関する本を読んでいました。その勉強の実践編というのと、学生生活の思い出作りを兼ねて参加してみようということになりました。</p>
+<h2 id="hacking-sprint-予選">
+  Hacking Sprint (予選)
+  <a href="#hacking-sprint-%e4%ba%88%e9%81%b8" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>過去の失敗からまず、MVP（Minimum Viable Product）を作り、Pitch Day でちゃんと動作するデモを見せられるようにする、というのを目指しました。過去にハッカソンに参加した際に、最初から大きなもの（プロダクトの完成形）を作ろうとしてしまい、プロダクトの基本機能すら一通り動作するところまで作りきれず、ちゃんとデモを行うことが出来ませんでした。こういった過去の失敗を今回も繰り返さないように注意して進めていきました。</p>
+<p>開発期間は一週間でした。ただ、私たちのチームは各自1日2,3時間程しか作業時間が確保出来ないことがわかっていました。そこで、なるべく効率よく開発を進めるために、GitHubの機能をフルに活用する事にしました。Projectのボード機能やGitHub ActionによるCI/CD、IssueテンプレートやPRテンプレートなどなどを整備し、スムーズに開発を行えるように努めました。</p>
+<p>Pitch Day での発表時間は1チーム90秒でした。90秒という時間でプロダクトについて最大限伝える必要があります。そこで私たちのチームは、デモに加えて、過去に参加したenPiTで学んだエレベータピッチを使って発表を行いました。最初の30秒までで挨拶とエレベーターピッチを行い、残りの60秒でデモを行いました。</p>
+<p>その結果、各ブロック毎のオーディエンス賞である、 Best Hacking Sprint Award を頂きました。また、GitHubの機能を最大件活用した開発を行ったことが評価され、Best Team Collaboration Award 賞を受賞する事も出来ました。</p>
+<h2 id="award-day-本選">
+  Award Day (本選)
+  <a href="#award-day-%e6%9c%ac%e9%81%b8" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>なんと、Finalist に選ばれ、Award Day (本選)に進出する事になりました。</p>
+<p>&hellip;</p>
+<p>すみません、Pitch Day 後から Award Day までの事については、後日追記します。多分</p>
+<h2 id="東京の感想">
+  東京の感想
+  <a href="#%e6%9d%b1%e4%ba%ac%e3%81%ae%e6%84%9f%e6%83%b3" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>電車便利だなと。普段自分で車を運転しての移動なので、乗ってるだけで目的地近くまで移動出来るのがめっちゃ楽でした。その電車に乗る際にはGoogleマップに頼りまくりました。目的地を設定することで今居る場所から最寄りの乗るべき駅とホーム、電車から降りる駅まで全て教えてくれて、これが無かったら迷子になってたと思います。また、ちゃんと正しい切符を買うのに疲れそうだったので、全てSUICA使って乗りました。</p>
+<h2 id="最後に">
+  最後に
+  <a href="#%e6%9c%80%e5%be%8c%e3%81%ab" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>ハッカソンやチーム開発に一度は参加してみると普段では得られないような学びが得られるので、機会があれば是非参加してみてください。</p>
+
+    </div>
+    
+
+    
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="https://umahara555.github.io/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >hello friend</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span
+          >© 2022 Powered by
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
+        >
+        <span
+          >Theme created by
+          <a href="https://twitter.com/panr" target="_blank" rel="noopener">panr</a></span
+        >
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>

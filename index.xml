@@ -9,9 +9,41 @@
     <description>Recent content on umahara555</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
+    <lastBuildDate>Sun, 18 Dec 2022 01:15:38 +0900</lastBuildDate>
     
 	<atom:link href="https://umahara555.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JPHACKS 2022</title>
+      <link>https://umahara555.github.io/posts/jphacks-2022/</link>
+      <pubDate>Sun, 18 Dec 2022 01:15:38 +0900</pubDate>
+      
+      <guid>https://umahara555.github.io/posts/jphacks-2022/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          この記事は、琉大 Advent Calendar 2022 18日目の記事になります。
+JPHACKS 2022 に参加した話です。
+参加のキッカケ # 今回自分も含めて4人のチームで参加しました。メンバーの3人とは以前から輪読会を行なっていて、チーム開発に関する本や開発手法に関する本を読んでいました。その勉強の実践編というのと、学生生活の思い出作りを兼ねて参加してみようということになりました。
+Hacking Sprint (予選) # 過去の失敗からまず、MVP（Minimum Viable Product）を作り、Pitch Day でちゃんと動作するデモを見せられるようにする、というのを目指しました。過去にハッカソンに参加した際に、最初から大きなもの（プロダクトの完成形）を作ろうとしてしまい、プロダクトの基本機能すら一通り動作するところまで作りきれず、ちゃんとデモを行うことが出来ませんでした。こういった過去の失敗を今回も繰り返さないように注意して進めていきました。
+開発期間は一週間でした。ただ、私たちのチームは各自1日2,3時間程しか作業時間が確保出来ないことがわかっていました。そこで、なるべく効率よく開発を進めるために、GitHubの機能をフルに活用する事にしました。Projectのボード機能やGitHub ActionによるCI/CD、IssueテンプレートやPRテンプレートなどなどを整備し、スムーズに開発を行えるように努めました。
+Pitch Day での発表時間は1チーム90秒でした。90秒という時間でプロダクトについて最大限伝える必要があります。そこで私たちのチームは、デモに加えて、過去に参加したenPiTで学んだエレベータピッチを使って発表を行いました。最初の30秒までで挨拶とエレベーターピッチを行い、残りの60秒でデモを行いました。
+その結果、各ブロック毎のオーディエンス賞である、 Best Hacking Sprint Award を頂きました。また、GitHubの機能を最大件活用した開発を行ったことが評価され、Best Team Collaboration Award 賞を受賞する事も出来ました。
+Award Day (本選) # なんと、Finalist に選ばれ、Award Day (本選)に進出する事になりました。
+&amp;hellip;
+すみません、Pitch Day 後から Award Day までの事については、後日追記します。多分
+東京の感想 # 電車便利だなと。普段自分で車を運転しての移動なので、乗ってるだけで目的地近くまで移動出来るのがめっちゃ楽でした。その電車に乗る際にはGoogleマップに頼りまくりました。目的地を設定することで今居る場所から最寄りの乗るべき駅とホーム、電車から降りる駅まで全て教えてくれて、これが無かったら迷子になってたと思います。また、ちゃんと正しい切符を買うのに疲れそうだったので、全てSUICA使って乗りました。
+最後に # ハッカソンやチーム開発に一度は参加してみると普段では得られないような学びが得られるので、機会があれば是非参加してみてください。
+          
+        
+        </description>
+    </item>
     
   </channel>
 </rss>
